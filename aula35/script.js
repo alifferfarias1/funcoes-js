@@ -32,7 +32,7 @@ console.log("======================")
 
 function somaNan(a, b = 2, c = 4) {
     //  b = b || 0 
-    console.log(a + b + c); // pasando somendo um argumento ele soma o numero com undefined e retorna um NaN
+    console.log(a + b + c); // pasando somente um argumento ele soma o numero com undefined e retorna um NaN
 }
 somaNan(2, undefined, 20) // enviando undefined podemos fazer ele assumir o valor padrao de b
 console.log("======================")
@@ -55,7 +55,7 @@ arraysFunc(meuArray)
 
 console.log("======================")
 
-const conta = function(operador, acumulador, ...numeros) {// utilizando o rest operator todo o resto depois de acmmulador vai estar em numeros
+const conta = function(operador, acumulador, ...numeros) {// utilizando o rest operator todo o resto depois de acumulador vai estar em numeros
     for (let num of numeros) {
         if (operador === '+') acumulador += num;
         if (operador === '-') acumulador -= num;
