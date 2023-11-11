@@ -2,10 +2,9 @@
 function funcao(valor) {
     console.log(valor, arguments); // arguments é um espaço reservado para todos os argumentos passados para função, independente de terem um parametro ou nao
 }
-funcao('Valor', 1, 2, 3);
+funcao('Valor', 1, 4, 2, 3);
 
 console.log("======================")
-
 
 function funcaoSoma() {
     let total = 0;
@@ -25,7 +24,7 @@ function funcaoSemParametros(a, b, c, d, e) {
     console.log(a, b, c, d, e) // os valores que nao receberem argumentos ficam setados como undefined
 
 }
-funcaoSemParametros(1, 2, 3, 4)
+funcaoSemParametros(1, 2, 3)
 console.log("======================")
 
 
@@ -56,6 +55,7 @@ arraysFunc(meuArray)
 console.log("======================")
 
 const conta = function(operador, acumulador, ...numeros) {// utilizando o rest operator todo o resto depois de acumulador vai estar em numeros
+    console.log(numeros)
     for (let num of numeros) {
         if (operador === '+') acumulador += num;
         if (operador === '-') acumulador -= num;
@@ -66,4 +66,4 @@ const conta = function(operador, acumulador, ...numeros) {// utilizando o rest o
 
 }
 
-conta('*', 1, 20, 30, 40, 50)
+conta('+', 1, 20, 30, 40, 50)

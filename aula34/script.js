@@ -15,6 +15,7 @@ const souUmDado = function (){
 };
 
 
+
 function executaFuncao(funcao){
     funcao();
 };
@@ -32,10 +33,15 @@ funcaoArrow();
 
 // dentro de um objeto
 
-const obj = {
+const objPessoa = {
+    nome:'aliffer',
+    sobrenome: 'farias',
+    idade: 20,
+
     falar: function(){ // ou poderiamos usar só falar() {}
-        console.log('Estou falando');
+        console.log('Eu gosto de andar de skate');
     }
 };
 
-obj.falar();
+objPessoa.falar();
+console.log(objPessoa)
