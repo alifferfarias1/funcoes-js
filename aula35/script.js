@@ -31,7 +31,7 @@ console.log("======================")
 
 function somaNan(a, b = 2, c = 4) {
     //  b = b || 0 
-    console.log(a + b + c); // pasando somente um argumento ele soma o numero com undefined e retorna um NaN
+    console.log(a + b + c); // passando somente um argumento ele soma o numero com undefined e retorna um NaN
 }
 somaNan(2, undefined, 20) // enviando undefined podemos fazer ele assumir o valor padrao de b
 console.log("======================")
@@ -66,4 +66,4 @@ const conta = function(operador, acumulador, ...numeros) {// utilizando o rest o
 
 }
 
-conta('+', 1, 20, 30, 40, 50)
+conta('-', 1, 20, 30, 40, 50)

@@ -15,10 +15,9 @@ soma2(2, 5)
 
 // exemplos de funçoes sem retorno que são uteis document.addEventListener('click', function (){}) 
 // document.onclick()
-// document.addEventListener('click', function (){
-    // document.body.style.backgroundColor = 'red'
-
-// })
+document.addEventListener('click', function (){
+    document.body.style.backgroundColor = 'red'
+ })
 
 
 function criaPessoa(nome, sobrenome){
