@@ -15,14 +15,15 @@ soma2(2, 5)
 
 // exemplos de funçoes sem retorno que são uteis document.addEventListener('click', function (){}) 
 // document.onclick()
-document.addEventListener('click', function (){
-    document.body.style.backgroundColor = 'red'
- })
+// document.addEventListener('click', function (){
+//     document.body.style.backgroundColor = 'red'
+//  })
 
 
 function criaPessoa(nome, sobrenome){
     return{
-        nome, sobrenome
+        nome: nome,
+        sobrenome: sobrenome
     };
 }
 
@@ -50,7 +51,7 @@ console.log('=========================')
 
 // exemplo onde isso seria util
 function criaMultiplicador(multiplicador){ // multiplicador esta neste escopo porém a função 'filha' 
-    function multiplicacao(n){             // que seria a multiplicacao consegue a acessar o valor do seu parametro
+    function multiplicacao(n){             // que seria a multiplicacao consegue a acessar o valor do seu 
         return n * multiplicador;       
     }
     
