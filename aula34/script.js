@@ -13,6 +13,7 @@ function falaOi(){  // somente declarando funcções assim ocorre o hoisting
 const souUmDado = function (){
     console.log('souUmDado');
 };
+executaFuncao(souUmDado);
 
 
 
@@ -20,7 +21,6 @@ function executaFuncao(funcao){
     funcao();
 };
 
-executaFuncao(souUmDado);
 
 
 // arrow function
