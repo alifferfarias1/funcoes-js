@@ -62,8 +62,8 @@ const conta = function(operador, acumulador, ...numeros) {// utilizando o rest o
         if (operador === '*') acumulador *= num;
         if (operador === '/') acumulador /= num;
     }
-    console.log(acumulador)
+    console.log(acumulador )
 
 }
 
-conta('-', 1, 20, 30, 40, 50)
+conta('*', 1, 20, 30, 40, 50)

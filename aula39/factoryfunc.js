@@ -22,7 +22,7 @@ function criaPessoa(nome, sobrenome, altura, peso){
         altura,
         peso,
 
-        get imc(){                  // ao botar get o metodo se comporta como se fosse um atributo do obj
+         get imc(){                  // ao botar get o metodo se comporta como se fosse um atributo do obj
             const indice = this.peso / (this.altura ** 2);
             return indice.toFixed(2);
         }
@@ -33,6 +33,6 @@ const p1 = criaPessoa('Luiz', 'Otavio', 1.67, 70);
 const p2 = criaPessoa('Maria', 'Joaquina', 1.60, 42);
 p1.nomeCompleto = 'Aliffer alves farias'
 console.log(p1.nome)
-console.log(p1.sobrenome)
+console.log(p1.sobrenome, p1.imc)
 console.log(p1.fala('sobre js'))
 
