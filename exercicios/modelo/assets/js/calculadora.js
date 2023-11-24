@@ -4,17 +4,47 @@ function criaCalculadora() {
         display: document.querySelector('.display'), // podemos acessar usando this.display
 
 
+        inicia() {
+            this.clickBotoes();
+            this.pressionaEnter();
+        },
+
+        pressionaEnter(){
+            this.display.addEventListener('keyup', e =>{
+                if (e.keyCode === 13){
+                    this.realizaConta();
+                }
+            })
+        },
+
+        realizaConta() {
+            let conta = this.display.value;
+            try {
+                conta = eval(conta);
+                if (!conta) {
+                    alert('Conta Inválida')
+                    return;
+                }
+                this.display.value = conta;
+            } catch (e) {
+                alert('Conta Inválida');
+                return
+
+            }
+
+        },
 
         clearDisplay() {
 
             this.display.value = '';
         },
 
-
-
-        inicia() {
-            this.clickBotoes();
+        apagaUm() {
+            this.display.value = this.display.value.slice(0, -1)
         },
+
+
+
 
         clickBotoes() {
             document.addEventListener('click', function (e) {
@@ -25,6 +55,12 @@ function criaCalculadora() {
                 }
                 if (el.classList.contains('btn-clear')) {
                     this.clearDisplay();
+                }
+                if (el.classList.contains('btn-del')) {
+                    this.apagaUm()
+                }
+                if (el.classList.contains('btn-eq')) {
+                    this.realizaConta();
                 }
             }.bind(this));
 
