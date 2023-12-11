@@ -54,7 +54,7 @@ arraysFunc(meuArray)
 
 console.log("======================")
 
-const conta = function(operador, acumulador, ...numeros) {// utilizando o rest operator todo o resto depois de acumulador vai estar em numeros
+const conta = function (operador, acumulador = 1, ...numeros) {// utilizando o rest operator todo o resto depois de acumulador vai estar em numeros
     console.log(numeros)
     for (let num of numeros) {
         if (operador === '+') acumulador += num;
@@ -62,8 +62,16 @@ const conta = function(operador, acumulador, ...numeros) {// utilizando o rest o
         if (operador === '*') acumulador *= num;
         if (operador === '/') acumulador /= num;
     }
-    console.log(acumulador )
+    if (operador === '+') {
+        console.log(acumulador - 1)
+
+    } else if (operador === '-') {
+        console.log(acumulador - 1)
+
+    } else {
+        console.log(acumulador)
+    }
 
 }
 
-conta('*', 1, 20, 30, 40, 50)
+conta('-', undefined, 20, 30, 40, 50)

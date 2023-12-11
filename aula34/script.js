@@ -2,7 +2,7 @@
 
 falaOi(); // o javascript sobe a função para o inicio entao poderiamos subir o falaOi para antes da declaração
 
-function falaOi(){  // somente declarando funcções assim ocorre o hoisting
+function falaOi(){  // somente declarando funções assim ocorre o hoisting
     console.log('oi');
 }
 
@@ -44,4 +44,4 @@ const objPessoa = {
 };
 
 objPessoa.falar();
-console.log(objPessoa)
+console.log(objPessoa.nome)

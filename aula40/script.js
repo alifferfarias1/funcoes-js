@@ -5,7 +5,7 @@ function Pessoa(nome, sobrenome){
 
     };
     this.nome = nome //pessoa.nome == nome
-    this.sobrenome = sobrenome //pessoa.nome == nome
+    this.sobrenome = sobrenome //pessoa.sobrenome == nome
 
     this.metodo = () =>{
         const nomeComplete = `${this.nome} ${this.sobrenome} é meu nome completo`
@@ -17,3 +17,5 @@ const p1 = new Pessoa('Aliffer', 'Farias');
 const p2 = new Pessoa('Joao', 'Otavio');
 
 console.log(p2.metodo())
+console.log(p1.nome)
+console.log(p2.nome)
