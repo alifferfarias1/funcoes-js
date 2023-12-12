@@ -1,6 +1,6 @@
 // funções construtoras
 function Pessoa(nome, sobrenome){
-    const ID = 123456;
+    const id = 123456;
     const metodoInterno = function(){
 
     };
