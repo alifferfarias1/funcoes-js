@@ -16,7 +16,7 @@ function criaPessoa(nome, sobrenome, altura, peso){
         },
 
         fala (assunto = 'sobre nada'){
-            return `${this.nome} está falando ${assunto}.`;
+            return `${nome} está falando ${assunto}.`;
         },
 
         altura,
@@ -31,6 +31,9 @@ function criaPessoa(nome, sobrenome, altura, peso){
 
 const p1 = criaPessoa('Luiz', 'Otavio', 1.67, 70);
 const p2 = criaPessoa('Maria', 'Joaquina', 1.60, 42);
+
+
+console.log(p1.nomeCompleto)
 p1.nomeCompleto = 'Aliffer alves farias'
 console.log(p1.nome)
 console.log(p1.sobrenome, p1.imc)

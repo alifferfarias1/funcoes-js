@@ -1,5 +1,9 @@
 function Calculadora(){
     this.display = document.querySelector('.display');
+    
+    this.inicia = () => {
+        this.capturaEnter();
+        this.capturaCliques();}
 
     this.capturaEnter = () =>{
         document.addEventListener('keypress', e =>{
@@ -30,9 +34,6 @@ function Calculadora(){
             return
         }
     };
-    this.inicia = () => {
-        this.capturaEnter();
-        this.capturaCliques();}
     this.addNumDisplay = el =>{
         this.display.value += el.innerText;
         this.display.focus();
