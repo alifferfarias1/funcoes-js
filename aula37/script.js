@@ -9,6 +9,7 @@ function falaNome(){
 
 function usaFalaNome(){
     const nome = 'Otavio'
+    console.log(nome)
     falaNome();
 }
 

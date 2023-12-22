@@ -23,13 +23,18 @@ soma2(2, 5)
 function criaPessoa(nome, sobrenome){
     return{
         nome: nome,
-        sobrenome: sobrenome
+        sobrenome: sobrenome,
+
+        
+        nomeCompleto(){
+            return `${this.nome} ${this.sobrenome}`
+        }
     };
 }
 
 const p1 = criaPessoa('Aliffer', 'Farias')
 
-console.log(p1)
+console.log(p1, p1.nomeCompleto())
 console.log("=========================")
 
 

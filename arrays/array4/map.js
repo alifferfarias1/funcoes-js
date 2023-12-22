@@ -8,12 +8,6 @@ const dobro = numeros.map(valor =>  valor * 2);
 
 console.log(dobro)
 
-
-
-// retorne as pessoas que o nome tem 5 ou + letras
-// retorne as pessoas com mais de 50 anos
-// retorne as pessoas cujo nome termina com a
-
 const pessoas = [
     { nome: 'Luiz', idade: 62 },
     { nome: 'Maria', idade: 23 },
@@ -28,7 +22,7 @@ const nomes = pessoas.map(obj => obj.nome)
 const idades = pessoas.map(function(obj) {
     return {idade: obj.idade}
 })
-// console.log(idades)
+//  console.log(idades)
 
 const comIds = pessoas.map(function(obj, indice){
     const newObject = { ...obj};

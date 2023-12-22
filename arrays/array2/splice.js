@@ -2,6 +2,5 @@
 //                 0      1       2        3        4
 const nomes = ['maria', 'joao', 'mario', 'jose', 'joana']
 
-const removidos = nomes.splice(-3, 0, 'Aliffer', 'Otavio');
-
+const removidos = nomes.splice(nomes.length, 0, 'Aliffer', 'Otavio');
 console.log(nomes, removidos)
