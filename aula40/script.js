@@ -5,7 +5,7 @@ function Pessoa(nome, sobrenome){
 
     };
     this.nome = nome //pessoa.nome == nome
-    this.sobrenome = sobrenome //pessoa.sobrenome == nome
+    this.sobrenome = sobrenome //pessoa.sobrenome == sobrenome
 
     this.metodo = () =>{
         const nomeComplete = `${this.nome} ${this.sobrenome} é meu nome completo`

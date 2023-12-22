@@ -4,7 +4,7 @@ const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 
 
 const numeros2 = numeros.filter(valor => valor > 10);
-console.log(numeros2);
+console.log('numeros2 -->',numeros2);
 
 
 
@@ -34,12 +34,10 @@ const pessoasComNomeGrande = pessoas.filter(obj => obj.nome.length >= 5);
 
 const pessoasComIdade = pessoas.filter(obj => obj.idade > 50);
 
-const nomeTerminaComA = pessoas.filter(obj =>{
-    return obj.nome.toLowerCase().endsWith('a');
-});
+const nomeTerminaComA = pessoas.filter(obj => obj.nome.toLowerCase().endsWith('a'));
 
-// console.log(pessoasComNomeGrande);
+console.log(pessoasComNomeGrande);
 // console.log('=====================')
-// console.log(pessoasComIdade);
+console.log(pessoasComIdade);
 // console.log('=====================')
 console.log(nomeTerminaComA);

@@ -18,7 +18,7 @@ function Calculadora(){
             if (el.classList.contains('btn-num')) this.addNumDisplay(el);
             if (el.classList.contains('btn-clear')) this.clear();
             if (el.classList.contains('btn-delete')) this.del();
-            if (el.classList.contains('btn-eq')) this.realizaConta(el);
+            if (el.classList.contains('btn-eq')) this.realizaConta();
         });
     };
 
