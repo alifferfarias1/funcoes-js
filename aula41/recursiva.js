@@ -9,4 +9,4 @@ function recursivas(max){
 }
 
 
-recursivas(9);
+recursivas(7);

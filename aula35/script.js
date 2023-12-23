@@ -74,4 +74,4 @@ const conta = function (operador, acumulador = 1, ...numeros) {// utilizando o r
 
 }
 
-conta('-', undefined, 20, 30, 40, 50)
+conta('-', 1, 20, 30, 40, 50)
