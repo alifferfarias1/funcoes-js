@@ -11,11 +11,14 @@ function Pessoa(nome, sobrenome){
         const nomeComplete = `${this.nome} ${this.sobrenome} é meu nome completo`
         return nomeComplete;
     };
+    Object.freeze(this);
+
 }
 
 const p1 = new Pessoa('Aliffer', 'Farias');
 const p2 = new Pessoa('Joao', 'Otavio');
 
 console.log(p2.metodo())
+Object.freeze(p1);
 console.log(p1.nome)
 console.log(p2.nome)
