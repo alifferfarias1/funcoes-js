@@ -33,7 +33,7 @@ function somaNan(a, b = 2, c = 4) {
     //  b = b || 0 
     console.log(a + b + c); // passando somente um argumento ele soma o numero com undefined e retorna um NaN
 }
-somaNan(2, undefined, 20) // enviando undefined podemos fazer ele assumir o valor padrao de b
+somaNan(undefined, 2, 2) // enviando undefined podemos fazer ele assumir o valor padrao de b
 console.log("======================")
 
 function desestruturaçãoObj({ nome, sobrenome, idade }) {

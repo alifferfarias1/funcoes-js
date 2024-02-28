@@ -1,6 +1,6 @@
 // declaração de função (function hoisting)
 
-falaOi(); // o javascript sobe a função para o inicio entao poderiamos subir o falaOi para antes da declaração
+falaOi(); // o javascript sobe a função para o inicio entao poderiamos usar o falaOi para antes da declaração
 
 function falaOi(){  // somente declarando funções assim ocorre o hoisting
     console.log('oi');
